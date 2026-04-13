@@ -1,0 +1,19 @@
+{
+  "name": "Webtop KDE Desktop",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "forwardPorts": [3000, 3001],
+  "portsAttributes": {
+    "3000": {
+      "label": "Webtop HTTP",
+      "onAutoForward": "notify"
+    },
+    "3001": {
+      "label": "Webtop HTTPS",
+      "onAutoForward": "notify"
+    }
+  },
+  "postStartCommand": "bash start.sh"
+}
