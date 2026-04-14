@@ -1,7 +1,7 @@
 ---
 services:
   webtop:
-    image: lscr.io/linuxserver/webtop:debian-kde
+    image: lscr.io/linuxserver/webtop:debian-xfce
     container_name: webtop
     environment:
       - PUID=1000
